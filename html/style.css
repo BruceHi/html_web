@@ -1,0 +1,83 @@
+p {
+    color: cadetblue;
+}
+
+
+#para1 {
+    color: green;
+    text-align: center;
+}
+
+/* 后继兄弟选择器，后面所有 的 P */
+div~p {
+    color: red;
+}
+
+/*相邻兄弟选择器，后面一个。*/
+div+p {
+    color: cadetblue;
+    text-align: right;
+}
+
+/*body {*/
+/*    background-color: gainsboro;*/
+/*    background-image: url("avatar.jpg");*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: right top;*/
+/*}*/
+
+p.lowercase {
+    text-transform: capitalize;
+}
+
+a:link {
+    color: cadetblue;
+}
+a:visited {
+    color: green;
+}
+a:hover {
+    color: antiquewhite;
+}
+a:active {
+    color: azure;
+}
+
+ul.a {
+    list-style-type: square;
+}
+ul.b {
+    list-style-type: square;
+}
+
+ol.c {
+    list-style-type: lower-alpha;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background-color: green;
+}
+
+div {
+    outline: solid black;
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+}
+
+p.set {
+    /*display: none;*/
+    visibility: hidden;
+    border-style: dotted solid double dashed;
+    text-align: center;
+    border-color: blueviolet;
+}
