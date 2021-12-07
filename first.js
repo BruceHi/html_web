@@ -144,6 +144,8 @@ c = arr.concat('d', [1, 2, 3])
 console.log(c)
 console.log(arr)
 
+console.log(typeof arr)
+
 console.log(arr.join('-'))
 
 var arr = ['小明', '小红', '大军', '阿黄']
