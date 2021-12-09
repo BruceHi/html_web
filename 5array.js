@@ -1,4 +1,6 @@
 // 其他高阶函数
+'use strict';
+
 let arr = ['Apple', 'pear', 'orange'];
 console.log(arr.every(function (s) {
     return s.length > 0
@@ -55,7 +57,7 @@ function count() {
 let res = count()
 console.log(res);
 
-[f1, f2, f3] = res
+let [f1, f2, f3] = res
 console.log(f1);
 
 let [a, b] = [1, 2, 3]
