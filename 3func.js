@@ -239,3 +239,5 @@ console.log(cd)
 
 console.log(typeof q)
 // let q
+
+console.log(!false)

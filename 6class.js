@@ -164,3 +164,35 @@ for (let i = 1; i <= 3; i++) {
     ul.removeChild(ul.children[i])
 }
 // ul.removeChild(ul.children[1])
+
+let s = $('#para-1')
+console.log(s)
+
+let
+    input = $('#test-input'),
+    select = $('#test-select'),
+    textarea = $('#test-textarea');
+
+//
+// // input.val(); // 'test'
+// // input.val('abc@example.com'); // 文本框的内容已变为abc@example.com
+// //
+
+// print 是使用打印机打印web 页面
+console.log(select.val()); // 'BJ'
+// select.val('SH'); // 选择框已变为Shanghai
+//
+// textarea.val(); // 'Hello'
+// textarea.val('Hi'); // 文本区域已更新为'Hi'
+
+a = $('#test-link')
+a.click(function () {
+    alert('Hello!')
+})
+
+let arr = ['a', '', 'b']
+arr.forEach(function (value, index, array) {
+    console.log(value)
+})
+
+dddc = 123

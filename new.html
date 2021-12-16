@@ -38,7 +38,7 @@
     <p id="test-js">javascript</p>
     <p>Java</p>
 </div>
-
+<hr>
 <!--<p id="js">JavaScript</p>-->
 <div id="list">
     <p id="java">Java</p>
@@ -68,7 +68,36 @@
     <li>DirectX</li>
 </ul>
 
+<div id="test-jquery">
+    <p id="para-1" class="color-red">JavaScript</p>
+    <p id="para-2" class="color-green">Haskell</p>
+    <p class="color-red color-green">Erlang</p>
+    <p name="name" class="color-black">Python</p>
+    <form class="test-form" target="_blank" action="#0" onsubmit="return false;">
+        <legend>注册新用户</legend>
+        <fieldset>
+            <p><label>名字: <input name="name"></label></p>
+            <p><label>邮件: <input name="email"></label></p>
+            <p><label>口令: <input name="password" type="password"></label></p>
+            <p><button type="submit">注册</button></p>
+        </fieldset>
+    </form>
+</div>
+
+<form>
+    <input id="test-input" name="email" value="test">
+    <select id="test-select" name="city">
+        <option value="BJ" selected>Beijing</option>
+        <option value="SH">Shanghai</option>
+        <option value="SZ">Shenzhen</option>
+    </select>
+    <textarea id="test-textarea">Hello</textarea>
+</form>
 </body>
+
+<a id="test-link" href="#0">点我试试</a>
+
 <!-- 放在尾部，能够解析完html 执行 js -->
+<script src="jquery-3.2.1.slim.min.js"></script>
 <script src="6class.js"></script>
 </html>
