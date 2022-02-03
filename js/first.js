@@ -49,13 +49,14 @@ var age = 20;
 
 // 注意这是反引号
 var message = `你好，${name}，你今年${age}岁了！`
-// console.log(message)
+console.log(message)
 
 var s = 'hello, world!'
 console.log(s.length)
 console.log(s.toUpperCase())
 console.log(s.substring(0, 5))
 console.log(s.substring(7))
+console.log(s.indexOf('world'))
 
 // 测试数组
 var arr = [1, 2, 3.14, 'hello', null, true]
@@ -78,8 +79,8 @@ console.log(arr)
 console.log(arr[2])
 console.log(arr[5])
 
-// slice 切片
-var arr = ['A', 'B', 'C', 'D', 'E', 'F']
+// slice 切片，（复制）不影响原来的
+arr = ['A', 'B', 'C', 'D', 'E', 'F']
 console.log(arr.slice(0, 3))
 // 注意：只有一个数字的时候是省略end，与 python 和 go 不太一样
 console.log(arr.slice(3))
@@ -89,6 +90,7 @@ console.log(copy)
 // 不能使用 == 或 === 比较，因为都是 false
 console.log(copy == arr)
 // 转换成字符串再比较
+console.log(copy.toString())
 console.log(copy.toString() === arr.toString())
 
 // push, pop
@@ -120,7 +122,8 @@ console.log(a)
 
 var arr = ['Microsoft', 'Apple', 'Yahoo', 'AOL', 'Excite', 'Oracle']
 
-// 删除count个元素，并添加新的元素。返回删除后的元素
+// 返回删除后的元素。
+// 删除count个元素，并添加新的元素。
 console.log(arr.splice(2, 3, 'Apple'))
 console.log(arr)
 
@@ -148,7 +151,7 @@ console.log(typeof arr)
 
 console.log(arr.join('-'))
 
-var arr = ['小明', '小红', '大军', '阿黄']
+arr = ['小明', '小红', '大军', '阿黄']
 arr.sort()
 n = arr.length
 console.log(`欢迎${arr.slice(0, n-1).join('，')}和${arr[n-1]}同学！`);
@@ -162,3 +165,5 @@ console.log(`欢迎${arr.slice(0, n-1).join('，')}和${arr[n-1]}同学！`);
 console.log('小明' in arr)
 console.log(1 in arr)
 console.log(arr.indexOf('小刚'))
+console.log(arr)
+console.log(arr.indexOf('阿黄'))

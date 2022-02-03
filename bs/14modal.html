@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>模态框</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.bundle.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="container">
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">打开模态框</button>
+
+    <!-- 模态框 -->
+    <!-- 不加 fade 就是一个傻快的动作-->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">模态框标题</h4>
+                    <!--X号-->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- 模态框内容 -->
+                <div class="modal-body">
+                    模态框内容..
+                </div>
+
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--提示框 及其以后的没有看，因为涉及到 js 代码，而我的 js 有些忘了，需要重新学起。 -->
+
+</body>
+</html>

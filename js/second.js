@@ -1,7 +1,7 @@
 var x = {
     name: '小明',
     birth: 123,
-    'middle-school': 'No 1'  // 必须使用引号引起来
+    'middle-school': 'No 1'  // 属性名包含特殊字符，必须使用引号引起来
 }
 
 console.log(x.name)
@@ -19,10 +19,10 @@ console.log(x)
 
 console.log('age' in x)
 console.log('name' in x)
+console.log('---------------')
 
 delete x.age
 console.log('toString' in x)  // 继承属性
-
 console.log(x.hasOwnProperty('name'))
 console.log(x.hasOwnProperty('toString'))
 

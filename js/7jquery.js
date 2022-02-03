@@ -18,6 +18,7 @@ form.off().submit(function (e) {
     alert(form.serialize());
 });
 
+// jQuery对象类似数组，它的每个元素都是一个引用了DOM节点的对象。
 // 第一种方法
 /*selectAll.click(function (){
     if (selectAll.is(':checked')) {
@@ -50,8 +51,9 @@ langs.change(function (){
 
 selectAll.click(function (){
     // console.log(this instanceof jQuery) //false
-    // console.log(this) // dom 对象
-    langs.prop('checked', $(this).prop('checked'))
+    // console.log(this) // dom 对象 <input type="checkbox">
+    // langs.prop('checked', $(this).prop('checked'))
+    langs.prop('checked', $(this).is(':checked'))  //或
 })
 
 selectAll.change(function () {
@@ -65,7 +67,9 @@ selectAll.change(function () {
 })
 
 langs.change(function () {
-    let judge = langs.get().every(e => e.checked)
+    // 用get()拿到包含 jquery dom对象的Array  https://www.liaoxuefeng.com/wiki/1022910821149312/1028321864402080
+    // https://www.w3school.com.cn/jsref/prop_checkbox_checked.asp
+    let judge = langs.get().every(e => e.checked)  // HTML DOM Checkbox 对象的属性
     if (judge) {
         selectAll.prop('checked', true)
     } else {
@@ -76,6 +80,7 @@ langs.change(function () {
 
 invertSelect.click(function () {
     // console.log(langs instanceof iterable)
+    // console.log(langs instanceof jQuery)  // langs 是jquery 对象
     for (let lang of langs) {
         // console.log(lang instanceof jQuery)
         // lang 不为jquery 对象, 不能使用jquery 对象方法，比如 is，prop 方法。

@@ -42,10 +42,10 @@ function foo2(a, b, ...d) {
 foo2(1, 2, 3, 4, 5)
 
 function sum(...rest) {
-    if (rest.length == 0) {
+    if (rest.length === 0) {
         return 0
     }
-    if (rest.length == 1) {
+    if (rest.length === 1) {
         return rest[0]
     }
     var res = 0
@@ -213,7 +213,7 @@ var person = {
 var {dd, address: {city, zip}} = person;
 
 // console.log(address)
-
+console.log('-------------------')
 let {name, age: ag} = person
 console.log(name)
 console.log(ag)
@@ -237,7 +237,7 @@ console.log(m, n)
 let cd = new Map([['name', 'xc']])
 console.log(cd)
 
-console.log(typeof q)
+console.log(typeof cd)
 // let q
 
 console.log(!false)

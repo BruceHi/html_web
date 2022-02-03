@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.bundle.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="container-fluid mt-3">
+    <h1>等宽响应式列</h1>
+    <p>重置浏览器大小查效果。</p>
+    <p> 在移动设备上，即屏幕宽度小于 576px 时，四个列将会上下堆叠排版。</p>
+    <div class="row">
+        <div class="col p-3 bg-primary text-white">.col</div>
+        <div class="col p-3 bg-dark text-white">.col</div>
+        <div class="col p-3 bg-primary text-white">.col</div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-4 p-3 bg-primary text-white">.col</div>
+        <div class="col-sm-8 p-3 bg-dark text-white">.col</div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-3 col-md-6 col-lg-4 col-xl-2 p-3 bg-primary text-white">.col</div>
+        <div class="col-sm-9 col-md-6 col-lg-8 col-xl-10 p-3 bg-dark text-white">.col</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 p-3 bg-primary text-white">.col-md-4</div>
+        <div class="col-md-4 p-3 offset-md-4 bg-dark text-white">.col-md-4 .offset-md-4</div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 offset-md-3 bg-primary text-white">.col-md-3 .offset-md-3</div>
+        <div class="col-md-3 offset-md-3 bg-dark text-white">.col-md-3 .offset-md-3</div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 offset-md-3 bg-primary text-white">.col-md-6 .offset-md-3</div>
+    </div>
+</div>
+
+</body>
+</html>

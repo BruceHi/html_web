@@ -1,6 +1,7 @@
 // 其他高阶函数
 'use strict';
 
+//所有元素是否满足测试条件
 let arr = ['Apple', 'pear', 'orange'];
 console.log(arr.every(function (s) {
     return s.length > 0
@@ -46,7 +47,7 @@ function count() {
     let arr = []
     // 使用 var 的时候会出现 16，16，16
     // 使用 let 会正常的出现 1， 4， 9
-    for (var i = 1; i <= 3; i++) {
+    for (let i = 1; i <= 3; i++) {
         arr.push(function () {
             return i * i
         })
@@ -63,9 +64,15 @@ console.log(f1);
 let [a, b] = [1, 2, 3]
 console.log(a, b)
 
+let [c, ...d] = [1, 2, 3]
+console.log('first', c)
+console.log('end', d)
+
 console.log(f1())
 console.log(f2())
 console.log(f3())
+
+console.log('--------------------')
 
 function count2() {
     var arr = []
@@ -120,11 +127,10 @@ let pow3 = make_pow(3)
 console.log(pow2(5))
 console.log(pow3(5))
 
-let t
-console.log(t)
-
 console.log(123..toString())
 console.log((123).toString())
+
+console.log('----------date------------')
 
 let s = new Date()
 

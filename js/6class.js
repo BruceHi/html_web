@@ -64,17 +64,17 @@ if ((new Cat('x') instanceof Animal)
     console.log('测试失败!');
 }
 
-// console.log(window.innerWidth)
+console.log(window.innerWidth)
 
-// var menu = document.getElementById('drink-menu');
-// var drinks = document.getElementsByTagName('dt');
-// var i, s;
-//
-// s = '提供的饮料有:';
-// for (i=0; i<drinks.length; i++) {
-//     s = s + drinks[i].innerHTML + ',';
-// }
-// console.log(s);
+var menu = document.getElementById('drink-menu');
+var drinks = document.getElementsByTagName('dt');
+var i, s;
+
+s = '提供的饮料有:';
+for (i=0; i<drinks.length; i++) {
+    s = s + drinks[i].innerHTML + ',';
+}
+console.log(s);
 
 // 注意 document.getElementsByClassName('c-red c-green')
 // s 之后不能再选择了，要加 [0] 单个对象之后再选择
@@ -95,18 +95,16 @@ js.style.color = '#ff0000';
 js.style.fontWeight = 'bold';
 
 
-// js = document.getElementById('js')
-// let list = document.getElementById('list')
-// list.append(js)
+js = document.getElementById('js')
+let list = document.getElementById('list')
+list.append(js)
 
 // 注意 逗号
 // haskell 插入到最后
-// let
-//     list = document.getElementById('list'),
-//     haskell = document.createElement('p')
-// haskell.id = 'haskell'
-// haskell.innerText = 'Haskell'
-// list.appendChild(haskell)
+let haskell = document.createElement('p')
+haskell.id = 'haskell'
+haskell.innerText = 'Haskell'
+list.appendChild(haskell)
 
 let d = document.createElement('style')
 d.setAttribute('type', 'text/css')
@@ -165,8 +163,8 @@ for (let i = 1; i <= 3; i++) {
 }
 // ul.removeChild(ul.children[1])
 
-let s = $('#para-1')
-console.log(s)
+// let s = $('#para-1')
+// console.log(s)
 
 let
     input = $('#test-input'),
@@ -195,4 +193,4 @@ arr.forEach(function (value, index, array) {
     console.log(value)
 })
 
-dddc = 123
+// dddc = 123

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>列表组和卡片</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap.bundle.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="container mt-3">
+    <ul class="list-group">
+        <li class="list-group-item">第一项</li>
+        <li class="list-group-item active">第二项激活了</li>
+        <li class="list-group-item">第三项</li>
+    </ul>
+    <ul class="list-group">
+        <li class="list-group-item disabled">禁用项</li>
+        <li class="list-group-item">第二项</li>
+        <li class="list-group-item">第三项</li>
+    </ul>
+
+    <ul class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">第一项</a>
+        <a href="#" class="list-group-item list-group-item-action">第二项</a>
+        <a href="#" class="list-group-item list-group-item-action">第三项</a>
+    </ul>
+
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">第一项</li>
+        <li class="list-group-item">第二项</li>
+        <li class="list-group-item">第三项</li>
+        <li class="list-group-item">第四项</li>
+    </ul>
+
+    <ul class="list-group list-group-horizontal">
+        <li class="list-group-item">第一项</li>
+        <li class="list-group-item">第二项</li>
+        <li class="list-group-item">第三项</li>
+        <li class="list-group-item">第四项</li>
+    </ul>
+
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-success">成功列表项</li>
+        <li class="list-group-item list-group-item-secondary">次要列表项</li>
+        <li class="list-group-item list-group-item-info">信息列表项</li>
+        <li class="list-group-item list-group-item-warning">警告列表项</li>
+        <li class="list-group-item list-group-item-danger">危险列表项</li>
+        <li class="list-group-item list-group-item-primary">主要列表项</li>
+        <li class="list-group-item list-group-item-dark">深灰色列表项</li>
+        <li class="list-group-item list-group-item-light">浅色列表项</li>
+    </ul>
+
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">激活列表项</a>
+        <a href="#" class="list-group-item list-group-item-success">成功列表项</a>
+        <a href="#" class="list-group-item list-group-item-secondary">次要列表项</a>
+        <a href="#" class="list-group-item list-group-item-info">信息列表项</a>
+        <a href="#" class="list-group-item list-group-item-warning">警告列表项</a>
+        <a href="#" class="list-group-item list-group-item-danger">危险列表项</a>
+        <a href="#" class="list-group-item list-group-item-primary">主要列表项</a>
+        <a href="#" class="list-group-item list-group-item-dark">深灰色列表项</a>
+        <a href="#" class="list-group-item list-group-item-light">浅色列表项</a>
+    </div>
+</div>
+<hr>
+<div class="container">
+    <div class="card">
+        <div class="card-body">简单的卡片</div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">头部</div>
+        <div class="card-body">内容</div>
+        <div class="card-footer">尾部</div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>多种颜色卡片</h2>
+    <div class="card">
+        <div class="card-body">基础卡片</div>
+    </div>
+    <br>
+    <div class="card bg-primary text-white">
+        <div class="card-body">主要卡片</div>
+    </div>
+    <br>
+    <div class="card bg-success text-white">
+        <div class="card-body">成功卡片</div>
+    </div>
+    <br>
+    <div class="card bg-info text-white">
+        <div class="card-body">信息卡片</div>
+    </div>
+    <br>
+    <div class="card bg-warning text-white">
+        <div class="card-body">警告卡片</div>
+    </div>
+    <br>
+    <div class="card bg-danger text-white">
+        <div class="card-body">危险卡片</div>
+    </div>
+    <br>
+    <div class="card bg-secondary text-white">
+        <div class="card-body">次要卡片</div>
+    </div>
+    <br>
+    <div class="card bg-dark text-white">
+        <div class="card-body">黑色卡片</div>
+    </div>
+    <br>
+    <div class="card bg-light text-dark">
+        <div class="card-body">浅色卡片</div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some example text. Some example text.</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+        </div>
+    </div>
+
+    <div class="card" style="width:400px">
+        <img class="card-img-top" src="g4.jpg" alt="Card image">
+        <div class="card-body">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+    </div>
+
+    <div class="card" style="width:400px">
+        <img class="card-img-top" src="g4.jpg" alt="Card image">
+        <div class="card-img-overlay">
+            <h4 class="card-title">John Doe</h4>
+            <p class="card-text">Some example text.</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

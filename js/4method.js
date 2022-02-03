@@ -67,7 +67,7 @@ var xiaoming4 = {
 console.log(xiaoming4.age())
 // console.log(getAge())
 
-console.log(getAge.apply(xiaoming4, []))
+console.log('getAge:', getAge.apply(xiaoming4, []))
 
 console.log(Math.max.apply(null, [3, 4, 5]))
 console.log(Math.max.call(null, 3, 4, 5))
@@ -96,10 +96,13 @@ console.log(arr.reduce(function (x, y) {
 }))
 
 function string2int(s) {
-    s = s.split()
+    // s = s.split('') 返回 ['12345']
+    s = s.split('') // 返回：[ '1', '2', '3', '4', '5' ]
+    console.log(s)
     let nums = s.map(function (c) {
         return c - '0'
     })
+    console.log('nums', nums)
     return nums.reduce(function (x, y) {
         return x * 10 + y
     })
@@ -123,6 +126,7 @@ console.log('abc'.substring(1))
 console.log(parseInt('123'))
 
 // filter
+console.log('--------------------filter--------------------')
 arr = [1, 2, 3, 4, 5, 6]
 let r = arr.filter(function (x) {
     return x & 1 === 1
@@ -142,7 +146,9 @@ r = arr.filter(function (value, index, array) {
     console.log(array)
     return true
 })
+console.log(r)
 
+// 去重
 arr = ['apple', 'strawberry', 'banana', 'pear', 'apple', 'orange', 'orange', 'strawberry'];
 r = arr.filter(function (value, index, array) {
     return array.indexOf(value) === index
@@ -181,7 +187,7 @@ for (let i = 0; i <= 2.3; i++) {
     console.log(i)
 }
 
-// 排序
+// 排序 根据ASCII码进行排序
 arr = ['Google', 'Apple', 'Microsoft']
 console.log(arr.sort())
 
